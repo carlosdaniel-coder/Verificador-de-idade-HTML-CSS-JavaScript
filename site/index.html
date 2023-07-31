@@ -8,14 +8,25 @@
 </head>
 <body>
     <header><h1>Verificador de idades</h1></header>
+
     <section>
-        Ano de Nascimento: <input type="number" class="ano"><br>
-        Sexo: <input type="radio" name="" id="mas" onclick="clicar(1)"> Masculino <input type="radio" name="" id="fem" onclick="clicar(2)"> Feminino<br>
-        <button onclick="verificar()">Verificar</button>
-        <p class="txt"></p>
-        <div class="foto"></div>
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" id="nascimento" min="0">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <button onclick="verificar()">Verificar</button>
+        </div>
+        <div id="res">
+            Prencha os dados acima para ver o resutado!
+        </div>
     </section>
-    <footer><p>@ CursoemVideo</p></footer>
+    <footer><p>&copy; CursoemVideo</p></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
